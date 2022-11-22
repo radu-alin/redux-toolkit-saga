@@ -1,5 +1,6 @@
 import { Action, configureStore, EnhancedStore, ThunkAction } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
+import { logger } from 'redux-logger';
 
 import { rootSaga } from './sagas';
 import { rootReducer } from './reducers';
@@ -11,7 +12,7 @@ export const configureStoreWithMiddlewares = (initialState = {}): EnhancedStore 
     preloadedState: initialState,
     reducer: rootReducer,
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware({ thunk: false }).prepend(sagaMiddleware),
+      getDefaultMiddleware({ thunk: false }).prepend(sagaMiddleware).concat(logger),
     devTools: process.env.NODE_ENV !== 'production',
   });
 

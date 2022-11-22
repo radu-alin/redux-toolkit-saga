@@ -4,11 +4,12 @@ import { authStart, logoutStart } from '../../redux/authSlice';
 
 export const Auth = () => {
   const dispatch = useDispatch();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('test@test.io');
+  const [password, setPassword] = useState('test1234');
   const [isRegister, setIsRegister] = useState(false);
 
   const authenticate = () => {
+    console.log('%c-> developmentConsole: authenticate===> ', 'color:#77dcfd');
     const data = { email, password, isRegister };
     dispatch(authStart(data));
   };
