@@ -1,8 +1,8 @@
 import { AxiosRequestConfig } from 'axios';
 
-import { axiosInstance } from '../../../app/axios';
+import { axiosInstancePosts as axiosInstance } from '../../../app/axios';
 
-import { endpoints } from '../../../app/axios/constants';
+import { endpointsPosts as endpoints } from '../../../app/axios/constants';
 
 import { Post_Draft } from './../types/index';
 

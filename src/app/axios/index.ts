@@ -1,2 +1,2 @@
-export { axiosInstance } from './axiosInstance';
-export { baseUrl, endpoints } from './constants';
+export { axiosInstancePosts } from './axiosInstancePosts';
+export { baseUrlPosts, endpointsPosts } from './constants';

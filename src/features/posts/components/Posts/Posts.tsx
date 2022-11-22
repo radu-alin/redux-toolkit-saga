@@ -3,7 +3,6 @@ import { useAppDispatch } from '../../../../app/store/hooks';
 import { addPost, getPosts } from '../../redux/postsSlice';
 
 export const Posts = () => {
-  console.log('%c-> developmentConsole: Posts===> ', 'color:#77dcfd');
   const dispatch = useAppDispatch();
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');

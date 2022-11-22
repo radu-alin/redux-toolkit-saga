@@ -1,5 +1,5 @@
-export const baseUrl = 'https://jsonplaceholder.typicode.com';
+export const baseUrlPosts = 'https://jsonplaceholder.typicode.com';
 
-export enum endpoints {
+export enum endpointsPosts {
   posts = 'posts',
 }

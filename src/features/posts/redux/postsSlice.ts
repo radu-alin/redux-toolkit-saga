@@ -1,7 +1,6 @@
-import { Post_Draft } from './../types/index';
 import { createSlice, PayloadAction, createAction } from '@reduxjs/toolkit';
 
-import { Post } from '../types';
+import { Post, Post_Draft } from '../types';
 
 export interface PostsState {
   posts: Post[];
